@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="{% static 'navbar.css' %}"/>
+    <style>
+      ul{
+      font-size:2vw;
+      }
+      li{
+      font-size:2vw;
+      }
+    </style>
+  </head>
+  <body >
+  <div class="navbar">
+    <ul>
+      <li >{{date}}</li>
+      <li>{{time}}</li>
+    </ul>
+    </div>
+  </body>
+</html>

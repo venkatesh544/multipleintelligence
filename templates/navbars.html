@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href= "{% static 'rock.css' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#fff5ab;">
+
+<nav class="navbar navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="{% url 'sopan:home' %}">MULTIPLEINTELLIGENCES LOGO </a></li>
+      <li><a href="{% url 'sopan:python' %}">THEROY</a></li>
+      <li><a href="{% url 'sopan:java' %}">MULTIPLEINTELLIGENCES TEST</a></li>
+      <li><a href="{% url 'sopan:save' %}">PHOTOS</a></li>
+      <li><a href="{% url 'sopan:intel' %}">CAREER BASED MI THEROY</a></li>
+    </ul>
+  </div>
+</nav>
+ {% block content %}
+
+
+ {% endblock %}
+
+</body>
+</html>
+

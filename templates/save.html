@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'navbars.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<br>
+<html>
+<head>
+<title>website</title>
+	<h1 style="font-size:2vw;color: blue;">பல நுண்ணறிவு கோட்பாட்டை கொண்ட புகைப்படங்கள்...!</h1>
+<style >
+img{
+	padding-bottom: 40px; 
+	width:350px;
+	height: 320px;
+
+}
+a{
+  padding: 45px;
+
+}
+</style>
+</head>
+<body >
+<div class="row">
+	<div class="column">
+		<br>
+		{% if image %}
+		{% for i in image %}
+
+
+		<td><a target="_blank" href="/media/{{i.image}}"></td>
+		 <td><img src="/media/{{i.image}}"></a></td>
+
+
+{% endfor %}
+{% endif %}
+</div>
+</div>
+</body>
+</html>
+{% endblock %}

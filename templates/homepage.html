@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>STAR</title>
+	   <link rel="stylesheet"href="{% static 'style.css' %}" >
+	<style>
+		a{
+		font-size:2vw;
+		}
+	</style>
+</head>
+<body bgcolor="#03256c">
+	{% include 'navbar.html' %}
+	<div class="container">
+		<h1 style="font-size:2vw;">WELCOME TO MULTIPLEINTELLIGENCE</h1>
+		<br>
+		<h2 style="font-size:2vw;"> made by </h2>
+		<h2 style="font-size:2vw;">VENKATESH</h2>
+		<br>
+		<h1 style="font-size:2vw;">Click Start Here!!!</h1>
+		<a href="{% url 'bdaloginpage'%}">Get Start</a>
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'navbars.html' %}
+{% block content %}
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+<h1 style="font-size:2vw;color: blue; ">எட்டு வகையான புலனாய்வு கோட்பாடு</h1>
+{% for i in data %}
+<p style="font-size:2vw; text-align:center; font-family:bold;">{{i.heading}}</p>
+
+<p  style="background-color: white; margin: 20px auto;padding: 70px; width: 70%;font-size:1.5vw; margin:20px auto;font-family:bold;">{{i.code}}</p>
+
+{% endfor %}
+</body>
+</html>
+
+{% endblock %}
